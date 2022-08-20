@@ -8,19 +8,19 @@ class Customer(models.Model):
     last_name=models.CharField(max_length=15)
     address=models.TextField()
     email=models.EmailField()
-    phoneneumber=models.CharField(max_length=10)
+    phone_number=models.CharField(max_length=10)
     age=models.PositiveSmallIntegerField()
     GENDER_CHOICE = (("M","Male"),("F","Female"))
     gender=models.CharField(max_length=1,choices=GENDER_CHOICE,null=True)
     pin=models.CharField(max_length=8,null=True)
     id_number=models.CharField(max_length=10,null=True)
     nationality=models.CharField(max_length=20,null=True)
-    occupation=models.CharField(max_length=10,null=True)
+    occupation=models.CharField(max_length=20,null=True)
     signature=models.ImageField()
     
 class Currency(models.Model):
     amount=models.IntegerField()
-    origin_county=models.CharField(max_length=25,null=True)
+    origin_country=models.CharField(max_length=25,null=True)
     
     
 class Wallet(models.Model):
