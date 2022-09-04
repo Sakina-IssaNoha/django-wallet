@@ -1,5 +1,5 @@
 from django.contrib import admin 
-from .models import Currency, Customer, Receipt,Wallet,Account,Transaction,Card,Thirdparty,Notification,Loan,Reward
+from ...wallet.models import Currency, Customer, Receipt,Wallet,Account,Transaction,Card,Thirdparty,Notification,Loan,Reward
 
 # Register your models here.
 # from .models import Customer, Wallet
